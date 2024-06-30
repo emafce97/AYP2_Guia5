@@ -1,0 +1,16 @@
+public class Buscador {
+
+    public static boolean existeElemento(int[] arreglo, int x){
+        for(Integer num : arreglo){
+            if(num == x){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args){
+        int[] arreglo = {1,2,3,6,7,8,9};
+        System.out.println(existeElemento(arreglo,8));
+    }
+}
