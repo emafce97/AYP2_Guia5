@@ -1,0 +1,12 @@
+    /**
+     * Dado un arreglo de numeros naturales (incluido el 0), verificar cual es el primer numero faltante
+     * @param naturales Arreglo de numeros naturales
+     * @return Numero faltante
+     */
+    public static int encontrarFaltante(int[] naturales){
+        int i = 0;
+        while(naturales[i] == i){
+            i++;
+        }
+        return i;
+    }
